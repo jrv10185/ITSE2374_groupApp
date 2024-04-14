@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li class="logo"><a href="index.html" class="jobcast">Jobcast</a></li>
+                
+                    <li class="profile-tab"></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form id="email" class="user-form">
+                <h1>Forgot password</h1>
+                <p>Enter your email and we'll send you a link to to change your password.</p>
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <span id="emailError" class="error"></span><br><br><br>
+            
+            
+                <input type="submit" value="Submit">
+            </form>
+        </main>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="forgotpass.js"></script>
+</body>
+</html>

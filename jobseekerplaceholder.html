@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Board</title>
+    <style>
+        /* CSS for context menu */
+        #contextMenu {
+            position: fixed;
+            border: 1px solid #1781E6;
+            background-color: #1781E6;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            border-radius: 8px;
+        }
+
+        #contextMenu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #contextMenu li {
+            padding: 10px 20px;
+            cursor: pointer;
+            color: white;
+        }
+
+        #contextMenu li:hover {
+            background-color: #156AA5;
+        }
+    </style>
+</head>
+<body>
+    <ul id="jobList">
+        <li class="job">Job 1</li>
+        <li class="job">Job 2</li>
+        <li class="job">Job 3</li>
+    </ul>
+
+    <div id="contextMenu" style="display: none;">
+        <ul>
+            <li onclick="applyJob()">Apply</li>
+        </ul>
+    </div>
+
+    <script>
+        let selectedJob = null;
+        const jobList = document.querySelectorAll('.job');
+        const contextMenu = document.getElementById('contextMenu');
+
+        function displayContextMenu(x, y) {
+            contextMenu.style.display = 'block';
+            contextMenu.style.left = x + 'px';
+            contextMenu.style.top = y + 'px';
+        }
+
+        function applyJob() {
+            if (selectedJob) {
+                // Record the application (you can replace this with your actual logic)
+                console.log(`Applied for ${selectedJob.textContent}`);
+
+                // Send email notification to employer (you can replace this with your actual logic)
+                sendEmailNotification(selectedJob.textContent);
+
+                // Reset selectedJob
+                selectedJob = null;
+            }
+        }
+
+        function sendEmailNotification(jobTitle) {
+            // Dummy email notification logic (replace with actual email sending code)
+            console.log(`Email sent to employer for ${jobTitle}`);
+        }
+
+        document.addEventListener('click', function() {
+            contextMenu.style.display = 'none';
+        });
+
+        jobList.forEach(job => {
+            job.addEventListener('contextmenu', function(e) {
+                e.preventDefault();
+                selectedJob = job;
+                displayContextMenu(e.clientX, e.clientY);
+            });
+        });
+    </script>
+</body>
+</html>

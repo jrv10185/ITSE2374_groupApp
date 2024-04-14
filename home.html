@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* body {
+        font-family: 'Verdana', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    } */
+
+      .button-container {
+        display: flex;
+      }
+
+      .square-button {
+        width: 200px;
+        height: 200px;
+        margin: 0 10px;
+        background-color: #1781e6;
+        color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .square-button img {
+        width: 50px;
+        height: 50px;
+        margin-top: 10px;
+      }
+
+      .square-button:hover {
+        background-color: #1366b1;
+      }
+    </style>
+    <title>Home page</title>
+  </head>
+  <body>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li class="logo"><a href="home.html" class="jobcast">Jobcast</a></li>
+                
+                    <li class="profile-tab"><a href="profile.html" class="nav-link">Profile</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+
+      <main>
+        <form id="registrationForm" class="user-form">
+          <h1>Welcome To Jobcast !</h1>
+          <p>Please Select One To Begin</p>
+
+
+          <div class="button-container">
+           
+            <a style="text-decoration: none;" href="create_job_listing.html"><p>Create Job Listing</p><img src="Plus_sign.png" alt="plus"></a><hr>
+            <a style="text-decoration: none;" href="#"><p>Explore Job Listing</p><img src="Magnifying_glass.png" alt="glass"></a>
+            
+          </div>
+
+
+           
+
+
+        </form>
+      </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="homepage.js"></script>
+  </body>
+</html>

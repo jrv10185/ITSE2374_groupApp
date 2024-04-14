@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li class="logo"><a href="home.html" class="jobcast">Jobcast</a></li>
+                    <li class="profile-tab"></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <main>
+            <div class="user-form">
+                <form action="#" method="post" onsubmit="return validateForm()">
+                    <h1>Create Profile</h1><br>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location" required>
+    
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="credentials">Job Credentials:</label>
+                    <textarea id="credentials" name="credentials" rows="8" cols="80" required></textarea>
+    
+                    <label for="resume">Upload Resume:</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx">
+    
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </main>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <script src="profile.js"></script>
+    </div>
+</body>
+</html>

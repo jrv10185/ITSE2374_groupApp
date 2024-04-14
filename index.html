@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li class="logo"><a href="index.html" class="jobcast">Jobcast</a></li>
+                
+                    <li class="profile-tab"></li>
+                </ul>
+            </nav>
+
+        </header>
+        <main>
+            <form id="loginForm" class="user-form">
+                <h1>Login</h1>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email">
+                    <span class="error-message"></span>
+                </div>
+
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password">
+                    <span class="error-message"></span>
+                </div>
+
+                <div>
+                    <a href="forgotpass.html" class="signup">Forgot password?</a>
+                </div><br>
+
+                
+
+                <div>
+                    <label></label>
+                    <input type="button" id="submit" value="Submit">
+                </div>
+
+                <div>
+                    <label></label>
+                    <input type="button" id="cancel" value="Cancel">
+                </div>
+                
+                <div>
+                    <p class="signup-sen">Don't have an account? <a href="register.html" class="signup">Sign up</a></p>
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Create Job Listing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li class="logo"><a href="home.html" class="jobcast">Jobcast</a></li>
+                
+                    <li class="profile-tab"></li>
+                </ul>
+            </nav>
+
+        </header>
+        <main>
+            <form id="registrationForm" class="user-form">
+                <h1>Create Your Job Listing</h1>
+                
+                <label for="name">Employer name:</label>
+                <input type="text" id="employer_name" name="employer_name"><br>
+            
+                <label for="location">Location</label>
+                <input type="location" id="location" name="location">
+                <br>
+
+                <label for="category">Category</label>
+                <select id="category" name="category" required>
+                    <option value="" disabled selected>Select a category</option>
+                    <option value="arts_and_entertainment">Arts and Entertainment</option>
+                    <option value="business_and_finance">Business and Finance</option>
+                    <option value="customer_service">Customer Service</option>
+                    <option value="education">Education</option>
+                    <option value="engineering">Engineering</option>
+                    <option value="healthcare">Healthcare</option>
+                    <option value="hospitality_and_tourism">Hospitality and Tourism</option>
+                    <option value="human_resources">Human Resources</option>
+                    <option value="information_technology">Information Technology</option>
+                    <option value="legal">Legal</option>
+                    <option value="manufacturing">Manufacturing</option>
+                    <option value="public_service">Public Service</option>
+                    <option value="retail">Retail</option>
+                    <option value="sales_and_marketing">Sales and Marketing</option>
+                    <option value="social_services">Social Services</option>
+                    <option value="trades">Trades</option>
+                    <option value="transportation">Transportation</option>
+                    <option value="other">Other</option>
+                
+                </select>
+                
+                <br><br>
+
+                <label for="description">Description:</label>
+                <input type="description" id="description" name="description">
+                <br>
+
+                <label for="salary_range">Salary Range:</label>
+                <select id="salary_range" name="salary_range" required>
+                    <option value="" disabled selected>Select a Salary Range</option>
+                    <option value="up_to_30k">Up to $30,000</option>
+                    <option value="30k_to_50k">$30,000 - $50,000</option>
+                    <option value="50k_to_70k">$50,000 - $70,000</option>
+                    <option value="70k_to_100k">$70,000 - $100,000</option>
+                    <option value="100k_to_150k">$100,000 - $150,000</option>
+                    <option value="150k_and_above">$150,000 and above</option>
+                </select>
+                
+                
+                <br><br>
+
+                <label for="startDate">Start Date:</label>
+                <input type="date" id="startDate" name="startDate" required="">
+                <br>
+            
+            
+                
+                <br><br>
+            
+                <input type="submit" value="Submit Job Listing">
+            </form>
+        </main>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="create_job_listing.js"></script>
+</body>
+</html>

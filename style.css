@@ -1,0 +1,224 @@
+/* Common Styles */
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: .1em .3em 1em 1em;
+    margin-bottom: 3em;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.user-form {
+    width: 100%;
+    max-width: 600px;
+    border: 2px solid #ccc;
+    padding: 2em;
+    background-color: white;
+    border-radius: 8px;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: .5em;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 1.5em;
+}
+
+
+.input-group input[type="radio"],
+.input-group input[type="checkbox"] {
+    display: none; 
+}
+
+.input-group label {
+    position: relative;
+    padding-left: 2em; 
+    cursor: pointer;
+    line-height: 1.5;
+}
+
+.input-group label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1em;
+    height: 1em;
+    border: 2px solid #1781E6; 
+    background-color: white;
+    border-radius: 50%; 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.input-group input[type="radio"]:checked + label:before,
+.input-group input[type="checkbox"]:checked + label:before {
+    background-color: #1781E6; 
+    transform: scale(1.1); 
+}
+
+.input-group label:hover:before {
+    border-color: #1366b1; 
+}
+
+
+input {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1em;
+}
+
+
+input[type="submit"],
+input[type="button"] {
+    background-color: #1781E6;
+    color: white;
+    padding: 0.6em 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    background-color: #1366b1; 
+}
+
+
+.error-message {
+    color: red;
+}
+
+
+
+    .signup:link
+    {
+       color: #3017E6;
+       text-decoration: none;
+       
+    }
+    .signup:visited
+    {
+       color: #3017E6;
+       text-decoration: none;
+    }
+    .signup:hover
+    {
+       color: #3017E6;
+       text-decoration: none;
+    }
+    .signupt-link:active
+    {
+       color: #3017E6;
+       text-decoration: none;
+    }
+
+    .backlogin:link
+    { font-family: Verdana, Arial, Helvetica, sans-serif;
+       color: #3017E6;
+       text-decoration: none;
+       font-size: 150%;
+       padding: 7em;
+    }
+    .backlogin:visited
+    { font-family: Verdana, Arial, Helvetica, sans-serif;
+       color: #3017E6;
+       text-decoration: none;
+       font-size: 150%;
+    }
+    .backlogin:hover
+    { font-family: Verdana, Arial, Helvetica, sans-serif;
+       color: #3017E6;
+       text-decoration: none;
+       font-size: 150%;
+    }
+    .backlogin-link:active
+    { font-family: Verdana, Arial, Helvetica, sans-serif;
+       color: #3017E6;
+       text-decoration: none;
+       font-size: 150%;
+    }
+    .signup-sen
+    {
+       padding-left: 29%;
+
+    }
+    .navbar {
+        background-color: #333;
+        padding: 1em;
+    }
+    
+    .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .navbar li {
+        display: inline;
+    }
+    
+    .navbar a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        padding: 0.5em;
+        transition: color 0.3s ease;
+    }
+    
+    .navbar a:hover {
+        color: #1781E6;
+    }
+    
+    
+    .profile-tab {
+        margin-left: auto; 
+    }
+    .logo {
+        font-size: 2em;
+    }
+    .button-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .button-container img {
+        height: 200px;
+       
+      }
+      
+      .button-container p {
+        margin: 0; 
+        padding: 10px;
+        font-size: 16px; 
+        text-decoration: none; 
+        color: #333; 
+      }
